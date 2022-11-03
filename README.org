@@ -45,7 +45,7 @@ setxkbmap -layout us -variant intl -option eurosign:e
 #+end_src
 
 #+CAPTION: Ferris FiNeX layout
-[[https://raw.githubusercontent.com/finex/manuform-finex/main/images/manuform-finex.png]]
+[[https://raw.githubusercontent.com/finex/ferris-sweep-finex/main/ferris-finex.png]]
 
 
 * Instructions
