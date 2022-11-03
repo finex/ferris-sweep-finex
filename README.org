@@ -1,6 +1,6 @@
 #+TITLE: Ferris Sweep FiNeX (Colemak DHm)
 #+AUTHOR: Leonardo (FiNeX) Finetti - https://www.leonardofinetti.it
-#+DATE: 09/10/2022
+#+DATE: 03/11/2022
 #+STARTUP: inlineimages
 #+STARTUP: nofold
 
@@ -16,25 +16,19 @@
 * Customized keymap for Ferris Sweep by Leonardo (FiNeX) Finetti
 This keymap is a direct porting of my current Dactyl Manuform layout with some mods to the reduced key number.
 
-*WARNING: README NOT UPDATED*
-
 * Features
 - Layout: Colemak DHm.
-- Added redundant ~Space~, ~Esc~, ~Ctrl~, ~Del~, ~Backspace~ and ~Enter~ keys. I like to have this keys on both halves.
-- Added macro to print ~->~ and ~=>~ strings.
+- Added redundant on both halves.
+- Added macros to print custom strings: ~->~, ~=>~, ~/*~, ~*/~, ~../~, ~//~.
 - Added macro to print ~:-(~ and ~:-)~ strings.
-- Added more arrows.
 - Added ~(~ and ~)~ on Shifts keys (Space Cadet Shift).
 - Tapdance:
   - ~;~ × 2 = ~:~
-  - ~[~ × 2 = ~{~
-  - ~]~ × 2 = ~}~
 - No media layer
-- "Print Screen" key.
 - ~Alt~, ~Ctrl~, ~Ctrl~ and ~Shift~ on home keys.
 - Added specific layout for "AwesomeWM" window manager.
-- Added clipboard, undo/redo and select all macro on both left and right hand.
-- Enable mouse layer on triple thumb tap dance.
+- Added clipboard and undo/redo special keys.
+- Mouse layer.
 
 * Layout
 This keyboard layout is intended to be used with English (US, intl, with dead keys) settings on PC.
