@@ -5,9 +5,9 @@
 #include "quantum.h"
 
 
-
-
-// Layer names
+//------------------------------------------------------------------------------
+// Layers
+//------------------------------------------------------------------------------
 enum{
   _COLEMAKDH, // Base Colemak Mod-DH
   _SYMB, // Symbols
@@ -21,6 +21,9 @@ enum{
 
 
 
+//------------------------------------------------------------------------------
+// Custom keycodes
+//------------------------------------------------------------------------------
 
 // - Home row modifiers:
 #define KH_A LGUI_T(KC_A)          // A / Left Gui
@@ -41,14 +44,10 @@ enum{
 #define CC_NABS LT(_NAVI, KC_BSPC)    // Backspace / _navigation
 #define CC_MOES LT(_MOUS, KC_ESC)     // Esc / _mouse
 
-
-
 // - Layers
 #define CC_LFUN OSL(_FUNC)
 #define CC_LWSP OSL(_WSPC)
 #define CC_LADJ OSL(_ADJUST)
-
-/* #define KC_WSDE LT(_WSPC, KC_DEL)     // Del / _workspace */
 
 // - Toggle layers:
 /* #define TG_NUM TG(_NUMB) */
@@ -82,20 +81,23 @@ enum{
 #define U_RDO LCTL(LSFT(KC_Z)) // Doesn't work on Emacs
 /* #define U_ALL C(KC_A) // Emacs need to rebind mark-whole-buffer to: C-a */
 
-
 // - Macros
 #define CC_BTAB RCS(KC_TAB)
 #define CC_NTAB C(KC_TAB)
-
 #define CC_WLSEL RCS(KC_LEFT)
 #define CC_WLMOV C(KC_LEFT)
 #define CC_WRSEL RCS(KC_RGHT)
 #define CC_WRMOV C(KC_RGHT)
 
+// - Tap dance codes
+enum tap_dance_codes {
+  /* DANCE_1, // Tab (single), Ctrl (hold), Mouse layer (double hold) */
+  DANCE_2, // Semicolon (single), Colon (double)
+  /* DANCE_3, // Left Bracket (single), Left Brace (double) */
+  /* DANCE_4  // Right Bracket (single), Left Brace (double) */
+};
 
-
-
-// Custom keycodes
+// - Custom symbols
 enum custom_keycodes {
   COLEMAKDH = SAFE_RANGE,
   ASC_SAR,
@@ -113,21 +115,7 @@ enum custom_keycodes {
   ASC_SSL
 };
 
-
-// Tap dance codes
-enum tap_dance_codes {
-  /* DANCE_1, // Tab (single), Ctrl (hold), Mouse layer (double hold) */
-  DANCE_2, // Semicolon (single), Colon (double)
-  /* DANCE_3, // Left Bracket (single), Left Brace (double) */
-  /* DANCE_4  // Right Bracket (single), Left Brace (double) */
-};
-
-
-
-
-
-
-// Send custom strings or change default base layer
+// - Send custom strings or change default base layer
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
   // Process caps_word
@@ -191,10 +179,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 };
 
 
-
-
-
-// Fine tuning of TAPPING_TERM valuer on some home row modifiers to avoid errors during typing.
+//------------------------------------------------------------------------------
+// TAPPING_TERM fine tuning
+//------------------------------------------------------------------------------
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
 

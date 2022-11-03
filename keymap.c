@@ -86,6 +86,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   )
 };
 
+
+
+// -----------------------------------------------------------------------------
+// Combos
+// -----------------------------------------------------------------------------
 enum combos {
   BG_DEL,
   JM_ENT
@@ -101,6 +106,9 @@ combo_t key_combos[COMBO_COUNT] = {
 
 
 
+// -----------------------------------------------------------------------------
+// Tap dance
+// -----------------------------------------------------------------------------
 //extern bool g_suspend_state;
 //#define GET_TAP_KC(dual_role_key) dual_role_key & 0xFF
 //uint16_t last_keycode = KC_NO;
@@ -235,7 +243,11 @@ qk_tap_dance_action_t tap_dance_actions[] = {
   /* [DANCE_4] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_4_finished, dance_4_reset) */
 };
 
+
+
+// -----------------------------------------------------------------------------
 // Enable tapping_force_hold only for home row mods
+// -----------------------------------------------------------------------------
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
   case KH_T:
