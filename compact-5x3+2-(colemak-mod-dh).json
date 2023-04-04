@@ -3,7 +3,7 @@
     "backcolor": "#e5e5e5",
     "name": "Compact 5x3+2 (Colemak Mod-DH)",
     "author": "Leonardo (FiNeX) Finetti (https://www.leonardofinetti.it)",
-    "notes": "# Ultra compact Keyboard Layout (34 keys) #\nRevision date: 2022-11-03\nLayout: English (US, intl, with dead keys)",
+    "notes": "# Ultra compact Keyboard Layout (34 keys) #\nRevision date: 2023-04-05\nLayout: English (US, intl, with dead keys)",
     "css": "* {\n    font-family: 'Iosevka SS04', sans-serif;\n}\n.keylabel9{\n    margin-top:0.5px;\n    margin-left:-3px;\n    font-size:6.5px!important;\n    color: #acacac!important;\n    font-weight: bold;\n    text-transform: uppercase;\n}\n.keylabel10{\n    margin-top:0.5px;\n    font-size:8px!important;\n}\n.keylabel11{\n    margin-top:0.5px;\n    right:-1px;\n    font-size:6.5px!important;\n    color:#777!important;\n}"
   },
   [
@@ -84,11 +84,11 @@
       "n": true
     },
     "t\n\n\n\nSHIFT",
-    "g",
+    "g\n\n\n\nHYPER",
     {
       "x": 0.5
     },
-    "m",
+    "m\n\n\n\nHYPER",
     {
       "n": true
     },
@@ -446,19 +446,19 @@
       "f": 3,
       "n": true
     },
-    ":\n\n\n\nSHIFT",
+    ":",
     {
       "f": 3
     },
-    "~\n\n\n\nCTRL",
+    "~",
     {
       "f": 3
     },
-    "->\n\n\n\nALT",
+    "->",
     {
       "f": 3
     },
-    "=>\n\n\n\nGUI",
+    "=>",
     {
       "x": 1,
       "f": 3
@@ -507,7 +507,8 @@
     },
     "F6",
     {
-      "a": 5
+      "a": 5,
+      "f": 3
     },
     "\nPrint\n\n\n\n\n⎙",
     {
@@ -640,7 +641,8 @@
     },
     "F3",
     {
-      "a": 5
+      "a": 5,
+      "f": 3
     },
     "\nIns\n\n\n\n\n⎀",
     {
@@ -681,14 +683,15 @@
       "c": "#e2e2e2",
       "f": 3
     },
-    "(",
+    ")",
     {
       "f": 3
     },
-    ")",
+    "(",
     {
       "x": 0.5,
-      "c": "#0094d9"
+      "c": "#0094d9",
+      "f": 3
     },
     "KC_TRNS",
     {
@@ -712,10 +715,9 @@
     },
     ",",
     {
-      "c": "#ba8325",
       "f": 3
     },
-    "0\n\n\n\n⌥ NUM 2",
+    "0",
     {
       "x": 0.5,
       "c": "#a3a3a3",
@@ -723,7 +725,8 @@
     },
     "🗲 QMK",
     {
-      "c": "#ffa600"
+      "c": "#ffa600",
+      "f": 3
     },
     "KC_TRNS",
     {
@@ -742,12 +745,14 @@
     "N/A",
     {
       "c": "#0cc94b",
-      "t": "#000000"
+      "t": "#000000",
+      "f": 3
     },
     "KC_TRNS",
     {
       "x": 0.5,
-      "c": "#fd70be"
+      "c": "#fd70be",
+      "f": 3
     },
     "KC_TRNS",
     {
@@ -853,11 +858,11 @@
     "N/A",
     {
       "x": 1,
-      "t": "#000000",
       "f": 3
     },
-    "GUI(q)",
+    "N/A",
     {
+      "t": "#000000",
       "f": 3
     },
     "GUI(7)",
@@ -1190,7 +1195,8 @@
     "N/A",
     {
       "c": "#0cc94b",
-      "t": "#000000"
+      "t": "#000000",
+      "f": 3
     },
     "KC_TRNS",
     {
@@ -1200,7 +1206,7 @@
     },
     "🗲 FUN",
     {
-      "c": "#ac9000",
+      "c": "#b0157b",
       "f": 3
     },
     "🗲 WOR",
@@ -1212,7 +1218,8 @@
     },
     "Mouse + CTRL",
     {
-      "x": 1
+      "x": 1,
+      "f": 3
     },
     "KC_TRNS",
     {
@@ -1227,10 +1234,9 @@
     },
     "BTN1",
     {
-      "c": "#ac9000",
       "f": 3
     },
-    "BTN2\n\n\n\n🗲 WOR",
+    "BTN2",
     {
       "x": 4,
       "c": "#b0157b",
@@ -1247,7 +1253,8 @@
     "N/A",
     {
       "c": "#0cc94b",
-      "t": "#000000"
+      "t": "#000000",
+      "f": 3
     },
     "KC_TRNS",
     {
@@ -1259,7 +1266,8 @@
     "N/A",
     {
       "c": "#b0157b",
-      "t": "#000000"
+      "t": "#000000",
+      "f": 3
     },
     "KC_TRNS"
   ],

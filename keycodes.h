@@ -35,7 +35,9 @@ enum{
 #define KH_E RCTL_T(KC_E)          // I / Right Ctrl
 #define KH_N RSFT_T(KC_N)          // N / Right Shift
 #define KH_X RALT_T(KC_X)          // X / Right Alt
-#define KH_DOT RALT_T(KC_DOT)       // . / Right Alt
+#define KH_DOT RALT_T(KC_DOT)      // . / Right Alt
+/* #define KH_G HYPR_T(KC_G)          // G / Hyper */
+/* #define KH_M HYPR_T(KC_M)          // M / Hyper */
 
 // - Thumbs keys/modifiers:
 #define CC_SYSP LT(_SYMB, KC_SPC)     // Space / _symbols

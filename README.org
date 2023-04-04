@@ -41,7 +41,6 @@ setxkbmap -layout us -variant intl -option eurosign:e
 #+CAPTION: Ferris FiNeX layout
 [[https://raw.githubusercontent.com/finex/ferris-sweep-finex/main/ferris-finex.png]]
 
-
 * Instructions
 To compile and flash the firmware just use the following command from the QMK main directory:
 
@@ -58,3 +57,5 @@ make ferris/sweep:finex:dfu-split-right
 * Changelog
 - 2022/11/03
   First public release.
+- 2023/04/05
+  Minor fix on reference image ad minor keymap tweaks

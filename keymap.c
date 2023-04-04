@@ -2,8 +2,6 @@
 
 #include "keycodes.h"
 
-
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 // -----------------------------------------------------------------------------
@@ -69,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Workspace (AwesomeWM navigation)
 // -----------------------------------------------------------------------------
   [_WSPC] = LAYOUT_split_3x5_2(
-    G(KC_Q) ,KC_AW7  ,KC_AW8  ,KC_AW9  ,XXXXXXX,                XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX,
+    XXXXXXX ,KC_AW7  ,KC_AW8  ,KC_AW9  ,XXXXXXX,                XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX,
     XXXXXXX ,KC_AW4  ,KC_AW5  ,KC_AW6  ,XXXXXXX,                XXXXXXX ,KC_RSFT ,KC_RCTL ,KC_LALT ,KC_RGUI,
     XXXXXXX ,KC_AW1  ,KC_AW2  ,KC_AW3  ,XXXXXXX,                XXXXXXX ,XXXXXXX ,XXXXXXX ,KC_RALT ,XXXXXXX,
                                     XXXXXXX ,XXXXXXX,       XXXXXXX ,XXXXXXX
